@@ -8,7 +8,7 @@
       apt: update_cache=yes   
    
     - name: Install tomcat
-      apt: name=thttpd state=latest
+      apt: name=httpd state=latest
 
     - name: Start Apache server
       service:

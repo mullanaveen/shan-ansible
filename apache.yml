@@ -8,11 +8,11 @@
       apt: update_cache=yes   
    
     - name: Install tomcat
-      apt: name=tomcat state=latest
+      apt: name=thttpd state=latest
 
     - name: Start Apache server
       service:
-        name: tomcat
+        name: httpd
         state: started
         enabled: True
     - name: Deploy static website
